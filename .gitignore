@@ -1,0 +1,5 @@
+### GoLang ###
+.idea
+*.iws
+*.iml
+*.ipr

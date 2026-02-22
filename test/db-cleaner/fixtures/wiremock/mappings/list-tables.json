@@ -1,0 +1,250 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/v1/tables",
+    "queryParameters": {
+      "databaseSchema": {
+        "equalTo": "service.database.schema"
+      }
+    },
+    "headers": {
+      "Authorization": {
+        "equalTo": "Bearer eyJraWQiOiJHYj"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "data": [
+        {
+          "id": "f5c990b5-f9db-44ce-83f5-39cfaf56dbd7",
+          "name": "table_a",
+          "fullyQualifiedName": "service.database.schema.table_a",
+          "version": 0.1,
+          "updatedAt": 1760535284253,
+          "updatedBy": "ingestion-bot",
+          "href": "http://localhost:8585/v1/tables/f5c990b5-f9db-44ce-83f5-39cfaf56dbd7",
+          "tableType": "Regular",
+          "columns": [
+            {
+              "name": "id",
+              "dataType": "BIGINT",
+              "dataLength": 1,
+              "dataTypeDisplay": "bigint",
+              "fullyQualifiedName": "service.database.schema.table_a.id",
+              "tags": [],
+              "constraint": "PRIMARY_KEY",
+              "children": []
+            },
+            {
+              "name": "text",
+              "dataType": "TEXT",
+              "dataLength": 1,
+              "dataTypeDisplay": "text",
+              "fullyQualifiedName": "service.database.schema.table_a.name",
+              "tags": [],
+              "constraint": "NOT_NULL",
+              "children": []
+            },
+            {
+              "name": "created_at",
+              "dataType": "TIMESTAMPTZ",
+              "dataLength": 1,
+              "dataTypeDisplay": "timestamptz",
+              "fullyQualifiedName": "service.database.schema.table_a.name",
+              "tags": [],
+              "constraint": "NOT_NULL",
+              "children": []
+            }
+          ],
+          "databaseSchema": {
+            "id": "724fc312-4808-4c08-a6b3-7efb4a7da3c3",
+            "type": "databaseSchema",
+            "name": "schema",
+            "fullyQualifiedName": "service.database.schema",
+            "displayName": "schema",
+            "deleted": false,
+            "href": "http://localhost:8585/v1/databaseSchemas/724fc312-4808-4c08-a6b3-7efb4a7da3c3"
+          },
+          "database": {
+            "id": "a6d194c2-2121-415d-86c6-d7c8e929a8be",
+            "type": "database",
+            "name": "database",
+            "fullyQualifiedName": "service.database",
+            "displayName": "database",
+            "deleted": false,
+            "href": "http://localhost:8585/v1/databases/a6d194c2-2121-415d-86c6-d7c8e929a8be"
+          },
+          "service": {
+            "id": "3cd03159-de31-4ac5-b911-99d7a6de3ad0",
+            "type": "databaseService",
+            "name": "service",
+            "fullyQualifiedName": "service",
+            "displayName": "service",
+            "deleted": false,
+            "href": "http://localhost:8585/v1/services/databaseServices/3cd03159-de31-4ac5-b911-99d7a6de3ad0"
+          },
+          "serviceType": "Postgres",
+          "deleted": false,
+          "sourceHash": "a8c35b17f485137be0c764ff28d40ae2",
+          "processedLineage": false
+        },
+        {
+          "id": "71e9b010-eefe-406f-a84a-9c502ee5d57f",
+          "name": "table_b",
+          "fullyQualifiedName": "service.database.schema.table_b",
+          "version": 0.1,
+          "updatedAt": 1760535282639,
+          "updatedBy": "ingestion-bot",
+          "href": "http://localhost:8585/v1/tables/71e9b010-eefe-406f-a84a-9c502ee5d57f",
+          "tableType": "Regular",
+          "columns": [
+            {
+              "name": "id",
+              "dataType": "BIGINT",
+              "dataLength": 1,
+              "dataTypeDisplay": "bigint",
+              "fullyQualifiedName": "service.database.schema.table_b.id",
+              "tags": [],
+              "constraint": "PRIMARY_KEY",
+              "children": []
+            },
+            {
+              "name": "text",
+              "dataType": "TEXT",
+              "dataLength": 1,
+              "dataTypeDisplay": "text",
+              "fullyQualifiedName": "service.database.schema.table_b.name",
+              "tags": [],
+              "constraint": "NOT_NULL",
+              "children": []
+            },
+            {
+              "name": "created_at",
+              "dataType": "TIMESTAMPTZ",
+              "dataLength": 1,
+              "dataTypeDisplay": "timestamptz",
+              "fullyQualifiedName": "service.database.schema.table_b.name",
+              "tags": [],
+              "constraint": "NOT_NULL",
+              "children": []
+            }
+          ],
+          "databaseSchema": {
+            "id": "724fc312-4808-4c08-a6b3-7efb4a7da3c3",
+            "type": "databaseSchema",
+            "name": "schema",
+            "fullyQualifiedName": "service.database.schema",
+            "displayName": "schema",
+            "deleted": false,
+            "href": "http://localhost:8585/v1/databaseSchemas/724fc312-4808-4c08-a6b3-7efb4a7da3c3"
+          },
+          "database": {
+            "id": "a6d194c2-2121-415d-86c6-d7c8e929a8be",
+            "type": "database",
+            "name": "database",
+            "fullyQualifiedName": "service.database",
+            "displayName": "database",
+            "deleted": false,
+            "href": "http://localhost:8585/v1/databases/a6d194c2-2121-415d-86c6-d7c8e929a8be"
+          },
+          "service": {
+            "id": "3cd03159-de31-4ac5-b911-99d7a6de3ad0",
+            "type": "databaseService",
+            "name": "service",
+            "fullyQualifiedName": "service",
+            "displayName": "service",
+            "deleted": false,
+            "href": "http://localhost:8585/v1/services/databaseServices/3cd03159-de31-4ac5-b911-99d7a6de3ad0"
+          },
+          "serviceType": "Postgres",
+          "deleted": false,
+          "retentionPeriod": "48h",
+          "sourceHash": "42cebddfd8295e6f6303670386917f94",
+          "processedLineage": false
+        },
+        {
+          "id": "0384c799-6985-45a9-9e25-4043498a38d1",
+          "name": "table_c",
+          "fullyQualifiedName": "service.database.schema.table_c",
+          "version": 0.2,
+          "updatedAt": 1764318830169,
+          "updatedBy": "user",
+          "href": "http://localhost:8585/v1/tables/0384c799-6985-45a9-9e25-4043498a38d1",
+          "tableType": "Regular",
+          "columns": [
+            {
+              "name": "id",
+              "dataType": "BIGINT",
+              "dataLength": 1,
+              "dataTypeDisplay": "bigint",
+              "fullyQualifiedName": "service.database.schema.table_c.id",
+              "tags": [],
+              "constraint": "PRIMARY_KEY",
+              "children": []
+            },
+            {
+              "name": "text",
+              "dataType": "TEXT",
+              "dataLength": 1,
+              "dataTypeDisplay": "text",
+              "fullyQualifiedName": "service.database.schema.table_c.name",
+              "tags": [],
+              "constraint": "NOT_NULL",
+              "children": []
+            },
+            {
+              "name": "created_at",
+              "dataType": "TIMESTAMPTZ",
+              "dataLength": 1,
+              "dataTypeDisplay": "timestamptz",
+              "fullyQualifiedName": "service.database.schema.table_c.name",
+              "tags": [],
+              "constraint": "NOT_NULL",
+              "children": []
+            }
+          ],
+          "databaseSchema": {
+            "id": "724fc312-4808-4c08-a6b3-7efb4a7da3c3",
+            "type": "databaseSchema",
+            "name": "schema",
+            "fullyQualifiedName": "service.database.schema",
+            "displayName": "schema",
+            "deleted": false,
+            "href": "http://localhost:8585/v1/databaseSchemas/724fc312-4808-4c08-a6b3-7efb4a7da3c3"
+          },
+          "database": {
+            "id": "a6d194c2-2121-415d-86c6-d7c8e929a8be",
+            "type": "database",
+            "name": "database",
+            "fullyQualifiedName": "service.database",
+            "displayName": "database",
+            "deleted": false,
+            "href": "http://localhost:8585/v1/databases/a6d194c2-2121-415d-86c6-d7c8e929a8be"
+          },
+          "service": {
+            "id": "3cd03159-de31-4ac5-b911-99d7a6de3ad0",
+            "type": "databaseService",
+            "name": "service",
+            "fullyQualifiedName": "service",
+            "displayName": "service",
+            "deleted": false,
+            "href": "http://localhost:8585/v1/services/databaseServices/3cd03159-de31-4ac5-b911-99d7a6de3ad0"
+          },
+          "serviceType": "Postgres",
+          "deleted": false,
+          "retentionPeriod": "48h",
+          "sourceHash": "e05bbc588579e4c8d6ed79b85e53d5dc",
+          "processedLineage": false
+        }
+      ],
+      "paging": {
+        "total": 15
+      }
+    }
+  }
+}
